@@ -1,0 +1,151 @@
+#nav {
+  background-color: rgb(126, 29, 0);
+}
+
+.kemicofa-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+}
+
+.kemicofa-row::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .kemicofa-row::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+
+  .kemicofa-row::-webkit-scrollbar-thumb {
+    background: rgb(255, 0, 0); 
+    border-radius: 10px;
+  }
+  
+  .kemicofa-row::-webkit-scrollbar-thumb:hover {
+    background: #970000; 
+  }
+
+
+.kemicofa-row > * {
+  flex-basis: 20rem;
+  flex-shrink: 0;
+}
+
+.kemicofa-row .card {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  border-radius: 2rem 2rem 1.5rem 1.5rem;
+  background: linear-gradient(60deg, #01060f 0%, #414c58 100%);
+  margin: 1rem 1rem 1rem 0rem!important;
+  box-shadow: 2px 4px #999;
+
+}
+
+.kemicofa-row .card > .card-content {
+  flex-grow: 1;
+  color: #fff;
+}
+
+.kemicofa-row .card > .card-image {
+  flex-basis: 20rem;
+  max-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow-y: hidden;
+  background-color: linear-gradient(60deg, #01060f 0%, #414c58 100%);
+  border-radius: 2rem 2rem 1rem 1rem;
+  
+}
+
+.synopsis {
+  font-size: 13.5px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #eb3e09;
+  box-shadow: inset 0 0 7px rgb(109, 5, 5);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#search {
+  width: 200%!important;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3.2px solid rgb(199, 3, 3);
+  border-radius: 4px;
+  box-shadow: inset 0 0 5px rgb(238, 103, 103);
+}
+
+::placeholder {
+  color: rgb(65, 61, 61);
+  opacity: 1;
+  font-weight: 600;
+}
+
+
+
+
+.card-title {
+  font-weight: 600!important;
+  font-size: 25px!important;
+}
+
+.card-action a {
+  font-size: 22px!important;
+  font-weight: 500!important;
+  margin-left: 2rem;
+ 
+}
+
+.card-image {
+  height: 55vw!important;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background:linear-gradient(to left,  #ff6600, #ffbb00, #ffae00,#ffbb00, #ff6600) ;
+}
